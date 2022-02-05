@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+
+.help{
+  display: grid;
+  gap: 2rem;
+  width: 50vw;
+  text-align: center;
+}
+
+.bke-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: red;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.block {
+  aspect-ratio: 1;
+  border: solid 1px blue;
+  transition: background-color 0.2s;
+}
+
+.block:hover, .block:focus {
+  background-color: lightblue;
+}
+
+.block.red {
+  background-color: red;
+}
+
+.block.blue {
+  background-color: blue;
+}
